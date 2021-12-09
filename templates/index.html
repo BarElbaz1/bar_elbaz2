@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    {% set page_name= 'Main page' %}
+    {% include('menu.html') %}
+    <h2>Hello {{ name | default('Stranger',true) | upper() }} {{ secondName }} !</h2>
+</body>
+</html>
