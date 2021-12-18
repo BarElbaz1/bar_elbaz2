@@ -1,0 +1,67 @@
+
+body{
+
+background-color: thistle;}
+
+
+#GridContainer{
+    display: grid;
+    grid-template-areas: 'header header header'
+                         'left main main' 
+                         'left main main';
+}
+
+#item1{
+    grid-area: header;
+    height: 100px;
+    width: 1060px;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border: black solid;
+}
+
+
+#item2{
+     grid-area: left ;
+     height: 500px;
+     width: 460px;
+     padding: 20px;
+     margin: 20px;
+     background-color: white;
+     border: black solid;
+}
+
+#item3{
+    grid-area: main;
+    height: 500px;
+    width: 460px;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border: black solid;
+}
+
+@media only screen and (max-width:600px) {
+    body{
+        background-color:powderblue;
+    }
+}
+
+    button{
+        height: 20%;
+        font-size: 20px;
+        background-color: cadetblue;
+        animation-name: blink;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes blink {
+            0% {background-color: yellow; border-radius: 0%;}
+            50%   {background-color: white; border-radius: 50%;}
+            100% {background-color: yellow; border-radius: 100%;}
+            100% {background-color: yellow; border-radius: 0%;}
+    }
+
+        

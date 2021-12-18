@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Elbaz CV</title>
+          {% include('include_css.html') %}
+        <script type="text/javascript" src= "{{url_for('static', filename='JS/CVgrid.js')}}"></script>
+
+
+</head>
+<body>
+    <div id="GridContainer">
+        <div id="item1">MY CV- BAR ELABZ</div>
+        <div id="item2">school</div>
+        <div id="item3" >Experience  <br>       
+            <button id="button" onclick="thankyou()">Email</button>
+            <h2 id="Contactme">Contact me</h2>
+            <form action="" method="post">
+                <input type="text" name="Fname" id="Fname" placeholder="First Name"><br>
+                <input type="text" placeholder="Last Name"><br>
+                <input id= "ID" type="text" placeholder="ID" minlength="9" maxlength="9" required><br>
+                <input type="email"   class= "buxa" name="Email" id="Email" placeholder="Email"><br>
+                <input type="submit" class="submit"><br>
+            
+        <a href="static/IMG/BarElbaz-CV.pdf" download="" target="_blank" >Download CV here</a >
+        </div>
+    </div>
+
+    
+</body>
+</html>
